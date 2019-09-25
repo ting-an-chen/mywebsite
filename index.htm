@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="gallery.css"/>
+</head>
+
+
+<body class="body">
+  <div id="mySidebar" class="sidenav" >
+      <button class="closebtn" onclick="closeNav()">×</button>
+
+    <div id="name">
+      <span>TING AN </span>
+      <span>CHEN</span>
+    </div>
+   <a onclick="openPage('HOME')" href="#">HOME</a>
+   <a onclick="openPage('BLOG')" href="#">BLOG</a>
+   <a onclick="openPage('PHOTOGRAPHY')"  href="#">PHOTOGRAPHY</a>
+   <a onclick="openPage('CRAFT')"  href="#">CRAFT</a>
+   <a onclick="openPage('CONTACT')" href="#">CONTACT</a>
+  </div>
+
+  <div id="gg-screen" hidden></div>
+
+<!-- Page content -->
+  <div class="main" id="page_container">
+    <button class="openbtn" onclick="openNav()">☰</button> 
+
+    <div id="HOME" style="display: block;">
+      <div class="overlay_container">  
+       <img src=index/IMG_2754.jpg alt="Zermatt" class="image">
+        <a href="https://www.google.com" target="_top"class="overlay">
+            <div class="text">Hello World</div></a>
+      </div>
+    </div>
+
+    <div id="BLOG" style="display: none;">
+      <p>Life is too beautiful but you just didn't even notice it.</p>
+       <a href="https://www.facebook.com/people/Ting-An-Chen/100000134990934"><img src="facebook.png" width="30"height="30"></a><a href="https://www.instagram.com/tinganc"><img src="instagram.png" width="30"height="30"></a><a href="mailto:tinganc@gmail.com"><img src="email.png" width="30"height="30"></a>
+    </div>
+
+    <div id="PHOTOGRAPHY" style="display: none;">
+      <div class="gg-box">
+        <a href="photography/album1.html" target="_self">
+        <img src="photography/ALBUM_1/IMG_2.JPG"></a>
+            
+         <a href="photography/album1.html" target="_self">
+         <img src="photography/ALBUM_2/IMG_2.JPG"></a>
+             
+         <a href="photography/album1.html" target="_self">
+         <img src="photography/ALBUM_3/IMG_1.JPG"></a>
+    
+         <a href="photography/album1.html" target="_self">
+         <img src="photography/ALBUM_4/IMG_1.JPG"></a>
+      </div>
+    </div>
+
+    
+
+    <div id="CRAFT" style="display: none;"></div>
+      
+
+    <div id="CONTACT" style="display: none;"></div>
+ </div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+ <script src="open.js"></script>
+ 
+
+
+
+
+</body>
+</html>
+
