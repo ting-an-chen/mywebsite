@@ -1,33 +1,38 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
   <link rel="stylesheet" href="sidebar.css">
   <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="gallery.css"/>
-</head>
+  <link rel="stylesheet" href="gallery.css">
+
 
 
 <body class="body">
-  <div id="mySidebar" class="sidenav" >
-      <button class="closebtn" onclick="closeNav()">×</button>
+  <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left w3-xxlarge" id="mySidebar" style="width:25%" >
+    <button class="w3-bar-item w3-button w3-large w3-hide-large w3-right-align" 
+     onclick="w3_close()">Close &times;</button>
 
     <div id="name">
       <span>TING AN </span>
       <span>CHEN</span>
     </div>
-   <a onclick="openPage('HOME')" href="#">HOME</a>
-   <a onclick="openPage('BLOG')" href="#">BLOG</a>
-   <a onclick="openPage('PHOTOGRAPHY')"  href="#">PHOTOGRAPHY</a>
-   <a onclick="openPage('CRAFT')"  href="#">CRAFT</a>
-   <a onclick="openPage('CONTACT')" href="#">CONTACT</a>
+    <a onclick="openPage('HOME')" href="#">HOME</a>
+    <a onclick="openPage('BLOG')" href="#">BLOG</a>
+    <a onclick="openPage('PHOTOGRAPHY')"  href="#">PHOTOGRAPHY</a>
+    <a onclick="openPage('CRAFT')"  href="#">CRAFT</a>
+    <a onclick="openPage('CONTACT')" href="#">CONTACT</a>
   </div>
 
   <div id="gg-screen" hidden></div>
 
 <!-- Page content -->
-  <div class="main" id="page_container">
-    <button class="openbtn" onclick="openNav()">☰</button> 
-
+  <div class="main" style="margin-left:25%">
+      <div class="w3-teal" >
+          <button id="openNav" class="w3-button w3-large w3-hide-large" 
+           onclick="w3_open()">&#9776;</button>
+         </div>
+  <div id="page_container">
     <div id="HOME" style="display: block;">
       <div class="overlay_container">  
        <img src=index/IMG_2754.jpg alt="Zermatt" class="image">
@@ -63,7 +68,7 @@
       
 
     <div id="CONTACT" style="display: none;"></div>
- </div>
+</div>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
  <script src="open.js"></script>

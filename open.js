@@ -14,12 +14,10 @@ function openPage(divID) {
     document.getElementById(divID).style.display = "block";
 }
 
-function openNav() {
-    document.getElementById("mySidebar").style.width = "300px";
-    document.getElementById("page_container").style.marginLeft = "300px";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("page_container").style.marginLeft= "0";
-  }
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}

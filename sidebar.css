@@ -1,5 +1,5 @@
 /* The sidebar menu */
-.sidenav {
+#mySidebar {
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 300px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
@@ -12,7 +12,7 @@
   }
   
   /* The navigation menu links */
-  .sidenav a,span{
+  #mySidebar a,span{
     padding: 6px 20px 6px 16px;
     text-decoration: none;
     font-size: 25px;
@@ -32,24 +32,11 @@
   }
   
   /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
+  #mySidebar a:hover {
     color: #f1f1f1;
   }
   
-  .openbtn, .closebtn{
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    position:absolute;
-    left:0px;
-  }
-  
-  .openbtn:hover {
-    background-color: #444;
-  }
+
 
   /* Style page content */
   .main {
@@ -59,6 +46,6 @@
   
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 50px;}
-    .sidenav a {font-size: 18px;}
+    #Sidebar {padding-top: 50px;}
+    #Sidebar a {font-size: 18px;}
   }
