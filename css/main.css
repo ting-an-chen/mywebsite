@@ -23,45 +23,29 @@
     background-color: #111; /* Black */
 }
 
-.overlay_container{
-    position: relative;
-    display:block; 
-    margin:auto;/*to to horizontally center*/
-    width: 547px;
-    height: 364px;
-}
-.image{
-    display: block;
-    width:547px;
-    height:364px;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    margin: auto;
-
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  display:block; 
-  margin:auto;
-  text-align: center;/*how to put the word in the center?*/
-}
-
 .text{
     color: white;
     font-size: 16px;
     padding: 16px 32px
 }
-:hover .image {
-    opacity: 0.3;
-  }
-:hover .overlay {
-    opacity: 1;
-  }
+#zermatt {
+    width:50%;
+    height:50%;
+}
+
+#coverphoto{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    grid-auto-rows:200px;grid-gap:8px
+}
+#coverphoto img{
+    object-fit:cover;
+    cursor:pointer;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,0.02);
+    border-radius:10px
+}
+#coverphoto img:hover{
+    opacity: 0.5;
+    

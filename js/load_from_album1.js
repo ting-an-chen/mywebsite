@@ -1,7 +1,7 @@
 $(document).ready(function() {
     var dir = "photography/ALBUM_1/IMG_";
           var i = 1;
-          while (i <=4) {
+          while (i <=21) {
             $("#album1_images").append('<img src="' + dir + i + '.JPG" />');
             i++;
           }
@@ -12,7 +12,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     var dir = "photography/ALBUM_2/IMG_";
           var i = 1;
-          while (i <=3) {
+          while (i <=16) {
             $("#album2_images").append('<img src="' + dir + i + '.JPG" />');
             i++;
           }
