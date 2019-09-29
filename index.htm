@@ -2,9 +2,9 @@
 <html>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
-  <link rel="stylesheet" href="sidebar.css">
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/gallery.css">
 
 
 
@@ -47,19 +47,39 @@
     </div>
 
     <div id="PHOTOGRAPHY" style="display: none;">
-      <div class="gg-box">
-        <a href="photography/album1.html" target="_self">
-        <img src="photography/ALBUM_1/IMG_2.JPG"></a>
-            
-         <a href="photography/album1.html" target="_self">
-         <img src="photography/ALBUM_2/IMG_2.JPG"></a>
-             
-         <a href="photography/album1.html" target="_self">
-         <img src="photography/ALBUM_3/IMG_1.JPG"></a>
-    
-         <a href="photography/album1.html" target="_self">
-         <img src="photography/ALBUM_4/IMG_1.JPG"></a>
+      <div class="gg-box" id="coverphoto">
+       <a onclick="openAlbum('album1')" href="#"><img id="picture1" src="photography/ALBUM_1/IMG_2.JPG"></a>
+       <a onclick="openAlbum('album2')" href="#"><img id="picture2" src="photography/ALBUM_2/IMG_2.JPG"></a>
+       <a onclick="openAlbum('album3')"  href="#"><img id="picture3" src="photography/ALBUM_3/IMG_1.JPG"></a>
+       <a onclick="openAlbum('album4')"  href="#"><img id="picture4" src="photography/ALBUM_4/IMG_1.JPG"></a> 
       </div>
+
+      <div id="all_album">
+        <div id="album1"style="display: none;">
+          <div class="gg-box" id="album1_images"></div>
+        </div>
+
+        <div id="album2"style="display: none;">
+          <div class="gg-box" id="album2_images"></div>
+        </div>
+
+        <div id="album3"style="display: none;">
+          <div class="gg-box" id="album3_images"></div>
+        </div>
+
+         <div id="album4"style="display: none;">
+            <div class="gg-box" id="album4_images"></div>
+       </div>
+      </div>
+    </div>
+
+      
+
+
+    </div>
+
+    <div id="album2"></div>
+    </div>
     </div>
 
     
@@ -71,8 +91,10 @@
 </div>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
- <script src="open.js"></script>
- 
+ <script src="js/open.js"></script>
+ <script src="js//open_album.js"></script>
+ <script src="js/load_from_album1.js"></script>
+ <script src="js/gallery.js"></script>
 
 
 
