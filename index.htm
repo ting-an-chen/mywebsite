@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="css/sidebar.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/hoverbox.css">
 
 
 
@@ -45,12 +46,42 @@
 
     <div id="PHOTOGRAPHY" style="display: none;">
       <div id="coverphoto">
-       <a onclick="openAlbum('album1')" href="#"><img id="picture1" src="photography/ALBUM_1/IMG_12.JPG"></a>
-       <a onclick="openAlbum('album2')" href="#"><img id="picture2" src="photography/ALBUM_2/IMG_11.JPG"></a>
-       <a onclick="openAlbum('album3')"  href="#"><img id="picture3" src="photography/ALBUM_3/IMG_1.JPG"></a>
-       <a onclick="openAlbum('album4')"  href="#"><img id="picture4" src="photography/ALBUM_4/IMG_1.JPG"></a> 
-      </div>
+        <div class="hvrbox">
+          <img id="picture1" class="hvrbox-layer_bottom" src="photography/ALBUM_1/IMG_12.JPG">
+          <a onclick="openAlbum('album1')" href="#">
+            <div class="hvrbox-layer_top">
+              <div class="hvrbox-text">2017Finland</div>
+            </div>
+          </a>
+        </div>
 
+        <div class="hvrbox">
+          <img id="picture2" class="hvrbox-layer_bottom" src="photography/ALBUM_2/IMG_11.JPG">
+          <a onclick="openAlbum('album2')" href="#">
+            <div class="hvrbox-layer_top">
+              <div class="hvrbox-text">2018Switzerland</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="hvrbox">
+          <img id="picture3" class="hvrbox-layer_bottom" src="photography/ALBUM_3/IMG_1.JPG">
+          <a onclick="openAlbum('album3')" href="#">
+            <div class="hvrbox-layer_top">
+              <div class="hvrbox-text">Mountians</div>
+            </div>
+          </a>
+        </div>        
+        <div class="hvrbox">
+          <img id="picture4" class="hvrbox-layer_bottom" src="photography/ALBUM_4/IMG_1.JPG">
+          <a onclick="openAlbum('album4')" href="#">
+            <div class="hvrbox-layer_top">
+              <div class="hvrbox-text">album4</div>
+            </div>
+          </a>
+        </div>
+      </div>
+       
       <div id="all_album">
         <div id="album1"style="display: none;">
           <div class="gg-box" id="album1_images"></div>

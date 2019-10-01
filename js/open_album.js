@@ -15,7 +15,3 @@ function openAlbum(divID) {
 
     document.getElementById("coverphoto").style.display = "none";
 }
-
-
-
-
