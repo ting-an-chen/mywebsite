@@ -57,13 +57,15 @@
     padding: 0px 10px;
   }
   
-  
+
 @media screen and (max-width: 800px) {
   #mySidebar {
      width: 100%;
+     display: none;
   }
 
   .main{
     margin-left: 0%;
+    
   }
 }
