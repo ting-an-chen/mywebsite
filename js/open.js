@@ -14,14 +14,12 @@ function openPage(divID) {
     document.getElementById(divID).style.display = "block";
 }
 
-function w3_open() {
-  document.getElementById("page_container").style.marginLeft = "25%";
-  document.getElementById("mySidebar").style.width = "25%";
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("openNav").style.display = 'none';
-}
 function w3_close() {
-  document.getElementById("page_container").style.marginLeft = "0%";
   document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("openNav").style.display = "inline-block";
+  document.getElementById("openNav").style.display = 'block';
+}
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = "none";
 }
