@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/hoverbox.css">
+  <link rel="stylesheet" href="css/aboutme.css">
+
+ <div class="preload">
+    <img id="loadingpic" src="photography/loading.png" alt="Loading...">
+  </div>
+
+<body class="body">
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left w3-xxlarge" id="mySidebar" style="display:none" >
+        <button class="w3-bar-item w3-button w3-large w3-hide-large w3-right-align" style="color:white" 
+        onclick="w3_close()">&times;</button>
+                
+        <div id="name">
+            <span>TING AN </span>
+            <span>CHEN</span>
+        </div>
+        <a href="index.htm">HOME</a>
+        <a href="blog.html">BLOG</a>
+        <a href="photography.html">PHOTOGRAPHY</a>
+        <a href="craft.html">CRAFT</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+                
+   <div id="gg-screen" hidden></div>
+                
+        <!-- Page content -->
+    <div class="main">
+        <div class="w3-teal" >
+          <button id="openNav" class="w3-button w3-large w3-hide-large" 
+           onclick="w3_open()">&#9776;</button>
+        </div>
+        <div id="page_container">
+            <div id="CRAFT"></div>
+            </div>
+        </div>
+    </div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+ <script src="js/open.js"></script>
+ <script src="js/open_album.js"></script>
+ <script src="js/load_from_album1.js"></script>
+ <script src="js/gallery.js"></script>
+
+
+
+
+</body>
+</html>
+

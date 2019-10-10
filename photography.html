@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/hoverbox.css">
+  <link rel="stylesheet" href="css/aboutme.css">
+
+<div class="preload">
+    <img id="loadingpic" src="photography/loading.png" alt="Loading...">
+</div>
+
+<body class="body">
+      <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left w3-xxlarge" id="mySidebar" style="display:none" >
+         <button class="w3-bar-item w3-button w3-large w3-hide-large w3-right-align" style="color:white" 
+         onclick="w3_close()">&times;</button>
+
+         <div id="name">
+           <span>TING AN </span>
+           <span>CHEN</span>
+         </div>
+         <a href="index.htm">HOME</a>
+         <a href="blog.html">BLOG</a>
+         <a href="photography.html">PHOTOGRAPHY</a>
+         <a href="craft.html">CRAFT</a>
+         <a href="contact.html">CONTACT</a>
+        </div>
+
+     <div id="gg-screen" hidden></div>
+
+     <!-- Page content -->
+     <div class="main">
+        <div class="w3-teal" >
+            <button id="openNav" class="w3-button w3-large w3-hide-large" 
+             onclick="w3_open()">&#9776;</button>
+           </div>
+     <div id="page_container">
+      <div id="PHOTOGRAPHY">
+        <div id="coverphoto">
+          <div class="hvrbox">
+            <img id="picture1" class="hvrbox-layer_bottom" src="photography/ALBUM_1/IMG_12.JPG">
+            <a onclick="openAlbum('album1')" href="#">
+              <div class="hvrbox-layer_top">
+                <div class="hvrbox-text">2017Finland</div>
+              </div>
+            </a>
+          </div>
+  
+          <div class="hvrbox">
+            <img id="picture2" class="hvrbox-layer_bottom" src="photography/ALBUM_2/IMG_11.JPG">
+            <a onclick="openAlbum('album2')" href="#">
+              <div class="hvrbox-layer_top">
+                <div class="hvrbox-text">2018Switzerland</div>
+              </div>
+            </a>
+          </div>
+  
+          <div class="hvrbox">
+            <img id="picture3" class="hvrbox-layer_bottom" src="photography/ALBUM_3/IMG_1.JPG">
+            <a onclick="openAlbum('album3')" href="#">
+              <div class="hvrbox-layer_top">
+                <div class="hvrbox-text">Mountians</div>
+              </div>
+            </a>
+          </div>        
+          <div class="hvrbox">
+            <img id="picture4" class="hvrbox-layer_bottom" src="photography/ALBUM_4/IMG_1.JPG">
+            <a onclick="openAlbum('album4')" href="#">
+              <div class="hvrbox-layer_top">
+                <div class="hvrbox-text">album4</div>
+              </div>
+            </a>
+          </div>
+        </div>
+  
+        <div id="all_album">
+          <div id="album1"style="display: none;">
+            <div class="gg-box" id="album1_images"></div>
+          </div>
+  
+          <div id="album2"style="display: none;">
+            <div class="gg-box" id="album2_images"></div>
+          </div>
+  
+          <div id="album3"style="display: none;">
+            <div class="gg-box" id="album3_images"></div>
+          </div>
+  
+           <div id="album4"style="display: none;">
+              <div class="gg-box" id="album4_images"></div>
+         </div>
+        </div>
+      </div>
+
+  
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+ <script src="js/open.js"></script>
+ <script src="js/open_album.js"></script>
+ <script src="js/load_from_album1.js"></script>
+ <script src="js/gallery.js"></script>
+
+
+
+
+</body>
+</html>
+

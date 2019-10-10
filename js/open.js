@@ -23,3 +23,7 @@ function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
   document.getElementById("openNav").style.display = "none";
 }
+
+$(window).load(function(){
+  $('.preload').fadeOut();
+});
