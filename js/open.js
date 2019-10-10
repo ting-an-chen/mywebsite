@@ -24,6 +24,7 @@ function w3_open() {
   document.getElementById("openNav").style.display = "none";
 }
 
+//for the loading picture
 $(window).load(function(){
   $('.preload').fadeOut();
 });
