@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/gallery.css">
   <link rel="stylesheet" href="css/hoverbox.css">
   <link rel="stylesheet" href="css/aboutme.css">
+  <link rel="stylesheet" href="css/blog.css">
 
 <div class="preload">
   <img id="loadingpic" src="photography/loading.png" alt="Loading...">
@@ -28,20 +29,115 @@
     <a href="contact.html">CONTACT</a>
    </div>
 
-      <div id="gg-screen" hidden></div>
-
      <!-- Page content -->
     <div class="main">
       <div class="w3-teal" >
           <button id="openNav" class="w3-button w3-large w3-hide-large" 
            onclick="w3_open()">&#9776;</button>
          </div>
-       <div id="page_container">
-         <div id="BLOG">
-         <p>Life is too beautiful but you just didn't even notice it.</p>
-         <a href="https://www.facebook.com/people/Ting-An-Chen/100000134990934"><img src="facebook.png" width="30"height="30"></a><a href="https://www.instagram.com/tinganc"><img src="instagram.png" width="30"height="30"></a><a href="mailto:tinganc@gmail.com"><img src="email.png" width="30"height="30"></a>
-         </div>
-       </div>
+         <div id="content-wrap">
+
+            <div class="blogcontent">
+              <article class="entry">
+               <header class="entry-header">
+                  <div class="entry-date">February 12, 2016</div>
+                  <h2 class="entry-title">
+                    <a href="single.html">Article1</a>
+                  </h2> 				 
+               </header> 
+               
+               <div class="entry-content">
+                 <p>Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud cupidatat dolor sunt sint sit nisi est eu exercitation incididunt adipisicing veniam velit id fugiat enim mollit amet anim veniam dolor dolor irure velit commodo cillum sit nulla ullamco magna amet magna cupidatat qui labore cillum sit in tempor veniam consequat non laborum adipisicing aliqua ea nisi sint ut quis proident ullamco ut dolore culpa occaecat ut laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat in adipisicing in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed.</p>
+                 <a href="single.html">Read more...</a>
+                </div> 
+     
+              </article> <!-- end entry -->
+     
+
+
+             
+              <article class="entry">
+                  <header class="entry-header">
+                     <div class="entry-date">February 12, 2016</div>
+                     <h2 class="entry-title">
+                       <a href="single.html">Article1</a>
+                     </h2> 				 
+                  </header> 
+                  
+                  <div class="entry-content">
+                    <p>Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud cupidatat dolor sunt sint sit nisi est eu exercitation incididunt adipisicing veniam velit id fugiat enim mollit amet anim veniam dolor dolor irure velit commodo cillum sit nulla ullamco magna amet magna cupidatat qui labore cillum sit in tempor veniam consequat non laborum adipisicing aliqua ea nisi sint ut quis proident ullamco ut dolore culpa occaecat ut laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat in adipisicing in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed.</p>
+                    <a href="single.html">Read more...</a>
+                   </div> 
+        
+                 </article> <!-- end entry -->
+     
+                 <article class="entry">
+                    <header class="entry-header">
+                       <div class="entry-date">February 12, 2016</div>
+                       <h2 class="entry-title">
+                         <a href="single.html">Article1</a>
+                       </h2> 				 
+                    </header> 
+                    
+                    <div class="entry-content">
+                      <p>Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud cupidatat dolor sunt sint sit nisi est eu exercitation incididunt adipisicing veniam velit id fugiat enim mollit amet anim veniam dolor dolor irure velit commodo cillum sit nulla ullamco magna amet magna cupidatat qui labore cillum sit in tempor veniam consequat non laborum adipisicing aliqua ea nisi sint ut quis proident ullamco ut dolore culpa occaecat ut laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat in adipisicing in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed.</p>
+                      <a href="single.html">Read more...</a>
+                     </div> 
+          
+                   </article> <!-- end entry -->
+
+
+                   
+     
+             <div class="pagenav">
+                   <p>
+                   <a rel="prev" href="#">Prev</a>   	
+                   <a rel="next" href="#">Next</a>     		
+                   </p>
+                 </div> 	
+     
+     
+            </div> <!-- end main -->
+     
+            <div id="sidebar" class="four columns">
+     
+              <div class="widget widget_search">
+                       <h3>Search</h3> 
+                       <form action="#">
+     
+                          <input type="text" value="Search here..." onblur="if(this.value == '') { this.value = 'Search here...'; }" onfocus="if (this.value == 'Search here...') { this.value = ''; }" class="text-search">
+                          <input type="submit" value="" class="submit-search">
+     
+                       </form>
+                    </div>
+     
+              <div class="widget widget_categories group">
+                <h3>Categories.</h3> 
+                <ul>
+                 <li><a href="#" >Wordpress</a> (2)</li>
+                 <li><a href="#" >Ghost</a> (14)</li>
+                 <li><a href="#" >Joomla</a> (5)</li>
+                 <li><a href="#" >Drupal</a> (3)</li>
+                 <li><a href="#" >Magento</a> (2)</li>
+                 <li><a href="#" >Uncategorized</a> (9)</li>						
+               </ul>
+             </div>
+    
+     
+              <div class="widget widget_tags">
+                    <h3>Post Tags.</h3>
+     
+                    <div class="tagcloud group">
+                       <a href="#">Corporate</a>
+                       <a href="#">Onepage</a>
+                       <a href="#">Agency</a>
+                       <a href="#">Multipurpose</a>
+                       <a href="#">Blog</a>
+                       <a href="#">Landing Page</a>
+                       <a href="#">Resume</a>
+                    </div>
+                       
+                 </div>
     </div>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -49,6 +145,11 @@
  <script src="js/open_album.js"></script>
  <script src="js/load_from_album1.js"></script>
  <script src="js/gallery.js"></script>
+ <script src="js/modernizr.js"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+ <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>  
+ <script src="js/main.js"></script>
 
 
 
