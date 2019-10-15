@@ -61,7 +61,6 @@ a {
 
 #sidebar .tagcloud a {
     display: inline-block;
-    float: left;
     margin: 6px 6px 6px 6px;
     padding: 6px 15px;
     position: relative;
@@ -98,7 +97,6 @@ ul {
 /*for the prev,next button*/
 
 .pagenav {
-    font: 18px/30px 'opensans-bold', sans-serif;
     text-align: left;
     margin-top: 12px;
     padding-top: 18px;
@@ -107,11 +105,7 @@ ul {
     font-family:'Mansalva';
 
 }
-.row {
-    width: 94%;
-    max-width: 1008px;
-    margin: 0 auto;
- }
+
  /* fixed width for IE8 */
  .ie .row { width: 1000px; }
  
