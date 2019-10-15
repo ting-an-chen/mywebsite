@@ -3,7 +3,7 @@
 }
 #content-wrap #main { padding-right: 40px; }
 
-.blogcontent {
+.blogcontent, .row {
     position: relative;
     padding: 0 18px;
     min-height: 1px;
@@ -41,15 +41,12 @@ a {
 
 
 /*sidebar for the catagory search*/
-#sidebar .widget_search {
-    padding-top: 0;
-    margin-bottom: 36px;
-}
 
 #sidebar {
     padding-top: 0px;
     padding-left: 40px;
     width: 33.33333%;
+
 }
 
 #sidebar .widget {
@@ -63,10 +60,9 @@ a {
 }
 
 #sidebar .tagcloud a {
-    font: 12px/24px 'opensans-bold', sans-serif !important;
     display: inline-block;
     float: left;
-    margin: 0 0 12px 12px;
+    margin: 6px 6px 6px 6px;
     padding: 6px 15px;
     position: relative;
     text-transform: uppercase;
@@ -81,6 +77,22 @@ a {
     -ms-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     border-radius: 3px;
+    font-size: 60%;
+}
+
+h3{
+    color: #2c6688;
+    font-family:'Mansalva'; 
+}
+
+ul {
+    display: block;
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
 }
 
 /*for the prev,next button*/
@@ -92,6 +104,7 @@ a {
     padding-top: 18px;
     margin-bottom: 48px;
     border-top: 1px solid #E8E8E8;
+    font-family:'Mansalva';
 
 }
 .row {
@@ -137,19 +150,7 @@ a {
  [class*="column"] + [class*="column"]:last-child { float: right; }
  [class*="column"] + [class*="column"].end { float: right; }
  
- /* column widths */
- .one, .row .one        { width: 8.33333%; }
- .two, .row .two        { width: 16.66667%; }
- .three, .row .three    { width: 25%; }
- .four, .row .four      { width: 33.33333%; }
- .five, .row .five      { width: 41.66667%; }
- .six, .row .six        { width: 50%; }
- .seven, .row .seven    { width: 58.33333%; }
- .eight, .row .eight    { width: 66.66667%; }
- .nine, .row .nine      { width: 75%; }
- .ten .row .ten         { width: 83.33333%; }
- .eleven, .row .eleven  { width: 91.66667%; }
- .twelve, .row .twelve  { width: 100%; }
+
  
  /* Offsets */
  .row .offset-1    { margin-left: 8.33333%; }
