@@ -35,6 +35,7 @@ a {
 }
 .entry-content{
     text-align: left;
+    font-size:110%;
 }
 
 
@@ -47,8 +48,13 @@ a {
 
 }
 
-#sidebar .widget {
-    margin-bottom: 18px;
+#sidebar .widget .dropdown-btn{
+    background-color: Transparent;
+    color:  gray;
+    border: none;
+    cursor:pointer;
+    outline:none;
+
 }
 
 #sidebar .tagcloud {
@@ -103,6 +109,21 @@ ul {
     font-family:'Mansalva';
 
 }
+
+.dropdown-container {
+    display: none;
+    padding-left: 8px;
+}
+
+.active {
+  background-color: green;
+  color: white;
+}
+
+.dropdown-btn button:hover, .dropdown-container a:hover {
+    color: #f1f1f1;
+  }
+
 
  /* fixed width for IE8 */
  .ie .row { width: 1000px; }
