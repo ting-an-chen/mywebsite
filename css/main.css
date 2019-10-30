@@ -17,8 +17,12 @@
     font-family:'Mansalva'; 
     color:gray; 
     text-align:center;
+    
+}  
+.mainpadding{
     padding:30px 30px 30px 30px;
 }
+
 .body {
     background-color: #111; /* Black */
 }
@@ -27,10 +31,6 @@
     color: white;
     font-size: 16px;
     padding: 16px 32px
-}
-#zermatt {
-    width:50%;
-    height:50%;
 }
 
 #coverphoto{
@@ -67,5 +67,69 @@
     left: 50%;
     transform: translate(-50%, -50%);
     height: 40%;
+
+}
+#openNav button{
+    position: absolute;
+}
+/*index page*/
+.page_container{
+    position: relative;
+     
+}
+
+.maintext {
+    position: absolute;
+    bottom: 25%;
+    left: 35%;
+    color: white;
+    height: 50%;
+    width: 23%;
+    text-align: left;
+}
+.maintext span1{
+    font-size: 200%;
+    padding: 5px 5px 5px 5px;
+}
+.maintext p{
+    font-size: 100%;
+    padding: 5px 5px 5px 5px;
+    margin-top:0px;
+
+}
+#homepic {
+    min-width: 1024px;
+    min-height: 100%;
+      
+    /* Set up proportionate scaling */
+    width: 90%;
+    height: auto;
+      
+    /* Set up positioning */
+    position: fixed;
+    z-index:-1;
+    top: 0;
+    left: 0;
+    margin-left: 25%;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+    #homepic {
+      left: 50%;
+      margin-left: -512px;   /* 50% */
+    }
+    .maintext {
+        position: absolute;
+        bottom: 25%;
+        left: 30%;
+        background-color:rgba(0,0,0,0.6);
+        height: 50%;
+        width: 37%;
+        padding-left: 10px;
+        
+  }
+  .maintext p{
+    padding: 5px 5px 5px 0px;
+}
 
 }
