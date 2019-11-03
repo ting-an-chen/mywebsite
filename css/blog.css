@@ -113,6 +113,7 @@ ul {
 .dropdown-container {
     display: none;
     padding-left: 8px;
+    color: #6593ad;
 }
 
 .active {
