@@ -1,0 +1,120 @@
+#coverphoto2{
+    display:grid;
+    grid-gap:8px;
+    grid-auto-rows:200px;
+}
+#coverphoto2 img{
+    object-fit:cover;
+    cursor:pointer;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,0.02);
+    border-radius:10px;
+}
+#coverphoto2 img:hover{
+    opacity: 0.5;
+}   
+
+.title{
+    text-align: left;
+    font-size: 200%;
+    padding:15px;
+
+}
+
+.row { /*margin to the left*/
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.craft_content { /*box putting the title and the picture in*/
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.picture_box{
+position: relative;
+min-height: 1px;
+padding-left: 15px;
+padding-right: 15px;
+height: 50%;
+width: 50%;
+}
+
+.animate-box {
+    opacity: 0; }
+
+.project {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 50%;
+    width: 50%;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.hvrbox:hover .desc,
+.hvrbox.active .desc {
+    opacity: 1;
+}
+.hvrbox .desc {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+
+.hvrbox .desc .description {
+    margin-top: 30px;
+    display: block;
+    position: relative;
+    height: 450px;
+}
+
+.hvrbox .desc h3 {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px; 
+    padding-left:15px;
+    text-align: left;
+}
+
+.hvrbox .desc span1 {
+    display: block;
+    color: #999999;
+    font-size: 16px;
+    text-align: left;
+    padding-left:15px;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+@media (min-width: 992px){
+.col-md-6 
+    {width: 50%;}
+}

@@ -23,6 +23,7 @@
     font-family:'Mansalva'; 
     text-decoration:none;
     margin-top: 0;
+    text-align:left;　
 }
 
 a {
@@ -33,6 +34,7 @@ a {
     background: transparent;
     text-decoration:none;
 }
+
 .entry-content{
     text-align: left;
     font-size:110%;
