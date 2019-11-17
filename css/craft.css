@@ -1,46 +1,28 @@
-#coverphoto2{
-    display:grid;
-    grid-gap:8px;
-    grid-auto-rows:200px;
+#picture_container{
+    position: absolute;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-#coverphoto2 img{
-    object-fit:cover;
-    cursor:pointer;
-    width:100%;
-    height:100%;
-    background:rgba(255,255,255,0.02);
-    border-radius:10px;
-}
-#coverphoto2 img:hover{
-    opacity: 0.5;
-}   
 
 .title{
     text-align: left;
     font-size: 200%;
     padding:15px;
+    margin-top:30px;
 
 }
 
-.row { /*margin to the left*/
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-.craft_content { /*box putting the title and the picture in*/
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.picture_box{
-position: relative;
-min-height: 1px;
-padding-left: 15px;
-padding-right: 15px;
-height: 50%;
-width: 50%;
+.hvrbox2 {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+    width: 450px;
+    height: 450px;
+    box-sizing: border-box;
+    border-radius:10px;
+    margin:5px;
+    float: left;
 }
 
 .animate-box {
@@ -49,19 +31,19 @@ width: 50%;
 .project {
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     position: relative;
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
     display: block;
-    margin-bottom: 30px;
+    object-fit:cover;
 }
 
-.hvrbox:hover .desc,
-.hvrbox.active .desc {
+.hvrbox2:hover .word_container,
+.hvrbox2.active .word_container {
     opacity: 1;
 }
-.hvrbox .desc {
+.hvrbox2 .word_container {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -77,14 +59,14 @@ width: 50%;
 }
 
 
-.hvrbox .desc .description {
+.hvrbox2 .word_container .description {
     margin-top: 30px;
     display: block;
     position: relative;
     height: 450px;
 }
 
-.hvrbox .desc h3 {
+.hvrbox2 .word_container h3 {
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
@@ -94,7 +76,7 @@ width: 50%;
     text-align: left;
 }
 
-.hvrbox .desc span1 {
+.hvrbox2 .word_container span1 {
     display: block;
     color: #999999;
     font-size: 16px;
@@ -115,6 +97,6 @@ width: 50%;
 }
 
 @media (min-width: 992px){
-.col-md-6 
+.page_container
     {width: 50%;}
 }
