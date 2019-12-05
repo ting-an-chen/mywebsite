@@ -1,4 +1,4 @@
-#picture_container{
+.picture_container{
     position: absolute;
     min-height: 1px;
     padding-left: 15px;
@@ -22,7 +22,7 @@
     box-sizing: border-box;
     border-radius:10px;
     margin:5px;
-    float: left;
+    float:left;
 }
 
 .animate-box {
